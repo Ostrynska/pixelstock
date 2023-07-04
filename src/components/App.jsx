@@ -22,7 +22,7 @@ export const App = () => {
   const [loading, setLoading] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [fullImage, setFullImage] = useState('');
-  const [error, setError] = useState(null);
+  // const [error, setError] = useState(null);
   const [totalHits, setTotalHits] = useState(0);
 
   const fetchPopularImages = async () => {
@@ -33,7 +33,7 @@ export const App = () => {
       setImages(popularImages);
       // setImages(images => [...images, ...popularImages]);
     } catch (error) {
-      setError(error);
+      toast.error(`Oops... Something went wrong`);
     } finally {
       setLoading(false);
     }
@@ -67,7 +67,7 @@ export const App = () => {
       setImages(images => [...images, ...newDataImage]);
       setTotalHits(totalHits);
     } catch (error) {
-      setError(error);
+      // setError(error);
       toast.error(`Oops... Something went wrong`);
     } finally {
       setLoading(false);
