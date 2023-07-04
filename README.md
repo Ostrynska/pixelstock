@@ -14,3 +14,5 @@ Personal project of an adaptive website for searching images by keyword and popu
 
 **4. Run Project**
 * `npm start`
+ <br>
+ <img src="./public/1.png">
