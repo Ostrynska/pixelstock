@@ -38,13 +38,14 @@ export const App = () => {
     }
   };
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (!searchName) {
       fetchPopularImages();
     } else {
       renderGallery();
-    }
-  }, [page, searchName]);
+    } // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [searchName, page]);
 
   const renderGallery = async () => {
     setLoading(true);
