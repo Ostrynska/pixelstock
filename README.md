@@ -15,4 +15,4 @@ Personal project of an adaptive website for searching images by keyword and popu
 **4. Run Project**
 * `npm start`
  <br>
- <img src="./public/1.png">
+ <img src="https://res.cloudinary.com/dcjlswtup/image/upload/v1688725147/Screenshot_2023-07-07_at_13.18.28_xakfdf.png">
